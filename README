@@ -1,4 +1,13 @@
-Instructions:
+
+### Write a Terraform code that
+* Creates an EC2 instance with
+  * The latest Ubuntu LTS AMI (AMI should be discovered dynamically, not hard-coded)
+  * A Security Group enabling access only on 22, 80, 443 from 5.148.131.186/32
+  * Uses SSH public key from path supplied as an variable (default value
+    ~/.ssh/id_rsa.pub)
+* Uses an S3 bucket as the Terraform backend (to store state)
+
+Instructions for bringing up a datacenter using the current code:
 
 Step 1:
   Update identity.tfvars and variables.tfvars files with required values
