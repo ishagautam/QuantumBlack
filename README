@@ -1,0 +1,13 @@
+Instructions:
+
+Step 1:
+  Update identity.tfvars and variables.tfvars files with required values
+
+Step 2:
+  To plan:    make plan
+
+Step 3:
+  To deploy:  make deploy
+
+Step 4:
+  To destroy: make destroy
